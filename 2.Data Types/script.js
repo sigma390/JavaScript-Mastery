@@ -21,3 +21,17 @@ let gfName = `My Gf name is ${namee()}`;
 console.log(gfName);
 
 //===================> Numbers <===================
+
+let num1 = 10;
+let num2 = 12.5;
+let num3 = num1 + num2;
+console.log(num3);
+
+//tricky Thing
+let str = 'String';
+let num = 10;
+let res = num / str;
+console.log(res);
+console.log(typeof res); //NaN is a Number
+
+//===================> Boolean <===================
