@@ -33,3 +33,29 @@ let lowerCaseString = mixedCase.toLowerCase();
 let upperCaseString = mixedCase.toUpperCase();
 console.log(lowerCaseString);
 console.log(upperCaseString);
+
+//3. Find A String in A String
+
+let hobbies =
+  'I love  HTML,CSS and JavaScript as well as TypeScript, JavaScript';
+//first Occurance
+
+let foundIndex = hobbies.indexOf('JavaScript'); //White Spaces Are Also Counted
+console.log(foundIndex);
+
+//last index  tells , whats Last index oF a substring that means theres A duplicacy
+
+let lastFoundIndex = hobbies.lastIndexOf('JavaScript');
+console.log(lastFoundIndex);
+
+//Includes()
+
+let doInclude = hobbies.includes('TypeScript');
+console.log(doInclude);
+
+//Starts With and Ends WIth
+
+let starts = hobbies.startsWith('I love');
+let ends = hobbies.endsWith('JavaScript');
+console.log(starts);
+console.log(ends);
