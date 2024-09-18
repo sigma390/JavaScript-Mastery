@@ -59,3 +59,31 @@ let starts = hobbies.startsWith('I love');
 let ends = hobbies.endsWith('JavaScript');
 console.log(starts);
 console.log(ends);
+
+//4.Get a Substring
+
+let substr = hobbies.substring(2, 5); //or hobbies.slice(2, 5)
+console.log(substr);
+
+//5.Split String into Array Of strings
+
+let toSplit = 'this is A string goNNA BE sPLITTED';
+let splitted = toSplit.split(' ');
+console.log(splitted);
+console.log(splitted.indexOf('A'));
+
+//6. Reverse A string
+let Proper = 'Testing';
+let reverse = Proper.split('').reverse().join('');
+console.log(reverse);
+
+//7.Repeat String
+let stringToRepeat = 'Repeat';
+
+let repeated = stringToRepeat.repeat(5);
+console.log(repeated);
+
+//8. Trim removes , white Spaces before and After
+
+let trimmed = '  Hello World  '.trim();
+console.log(trimmed);
