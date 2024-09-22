@@ -31,6 +31,9 @@ console.log(num3);
 let str = 'String';
 let num = 10;
 let res = num / str;
+let res1 = num + str; //string in the end
+console.log(res1); //because of + operator it will concatenate
+console.log(typeof res1); //string
 console.log(res);
 console.log(typeof res); //NaN is a Number
 
