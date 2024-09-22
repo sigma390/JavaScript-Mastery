@@ -87,3 +87,12 @@ console.log(repeated);
 
 let trimmed = '  Hello World  '.trim();
 console.log(trimmed);
+
+//9.Replace A string
+let messedUp = '1.2.3.4.5.6';
+
+let replaced = messedUp.replace('.', '|'); //single Ocuurance that is Only , first .
+console.log(replaced);
+let replacedAll = messedUp.replace(/\./g, '|'); //replace All Occurances
+console.log(replacedAll);
+//Common pattern , \$ means escaped $ , also we need to use /then escaped
