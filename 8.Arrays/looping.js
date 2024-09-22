@@ -58,7 +58,7 @@ let emplyees = [
     salary: 200,
   },
 ];
-//want tore trive employee names with salary >300 // always Returns Boolean not a Particular thing
+//want to retrive employee with salary >300 // always Returns Boolean not a Particular thing
 
 let RichEmp = emplyees.filter((employee) => {
   if (employee.salary > 300) {
