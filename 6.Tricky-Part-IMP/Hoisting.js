@@ -2,7 +2,7 @@
 console.log(x); //undefined as the variable Declaration only Moved to the top
 var x = 10; // only works with var , ( let and const ) will give error
 
-//function Hoisting
+//Hoisting Inside a fUNCTON
 
 const Arrow = () => {
   console.log(y); //undefined as the function declaration only Moved to the top
@@ -10,7 +10,7 @@ const Arrow = () => {
 };
 Arrow();
 
-// Function Hoisting
+// Function Hoisting , oNLY WORKS wITH Older function Declaration function x() , Not arrow Function
 
 func();
 
