@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .menu-item {
+      background-color: black;
+      color: white;
+    }
+    .menu-item.active {
+      background-color: white;
+      color: black;
+    }
+  </style>
+
+  <body>
+    <h1>Hellow World</h1>
+    <h2>DOM</h2>
+    <label for="name">Name</label>
+    <input id="name" type="text" />
+    <h1 class="test">test</h1>
+    <h1 class="test">test</h1>
+    <h1 class="test">test</h1>
+
+    <ul>
+      <li onclick="menuClicked(this)" class="menu-item active">menu1</li>
+      <li onclick="menuClicked(this)" class="menu-item">menu2</li>
+      <li onclick="menuClicked(this)" class="menu-item">menu2</li>
+      <li onclick="menuClicked(this)" class="menu-item">menu3</li>
+    </ul>
+  </body>
+  <script src="script.js"></script>
+</html>
