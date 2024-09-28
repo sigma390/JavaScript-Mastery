@@ -16,3 +16,16 @@ const obj = {}; // create Object
 //similarliy for arrays
 const arr = [];
 //or const arr = new Array(1,2,3); same
+
+//===================> This Keyword <=====================
+
+function Car(name, year) {
+  this.name = name;
+  this.year = year;
+  this.getinfo = () => {
+    console.log(`name : ${name} and year : ${year}`);
+  };
+}
+
+const m4 = new Car('m4', 2017);
+m4.getinfo();
