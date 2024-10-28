@@ -55,7 +55,7 @@ console.log(typeof man);
 
 //====================> objects <==============================
 
-//object used to G roup Variables
+//object used to Group Variables
 
 let breed = 'Labrador';
 let lifeSpan = 10;

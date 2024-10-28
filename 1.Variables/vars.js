@@ -1,7 +1,6 @@
 console.log('Welcome to Variables Section');
 
 //variable Declaration
-
 var x = 'om namah Shivay';
 var y = 12.4;
 var z = 45565555656;
