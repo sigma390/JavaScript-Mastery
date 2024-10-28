@@ -32,6 +32,8 @@ console.log(false || '' || null || undefined); //return last False Value
 
 //=====================> Switch Statement <====================
 
+//can Accept , Number , String , Boolean in switch(ch) ;
+
 let sname = 'Batman';
 
 switch (sname) {
