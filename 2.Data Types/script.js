@@ -37,7 +37,7 @@ console.log(typeof res1); //string
 console.log(res);
 console.log(typeof res); //NaN is a Number
 
-//===================> Boolean <===================
+//===================> Boolean <=============================
 
 let a = true | 1;
 let b = false | 0;
@@ -46,14 +46,14 @@ console.log(a, b);
 //==================> NULL and Undefined <===================
 
 let age = null;
-console.log(age);
+console.log(`value Of age is : ${age}`);
 console.log(typeof age);
 
 //Undefined
 let man; //decalred Variable but Not Assigned any Value
 console.log(typeof man);
 
-//====================> objects <==============================
+//====================> objects <=============================
 
 //object used to Group Variables
 
