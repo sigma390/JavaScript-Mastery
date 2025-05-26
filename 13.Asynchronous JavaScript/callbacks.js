@@ -32,8 +32,8 @@ fetchUser('Mirinda', (user) => {
   //resolves 1st callback
   console.log(`hello ${user} here`);
   //second callback
-  fetUserPhotos(user.username, (photos) => {
-    console.log(`These are photos of ${user.username}:`, photos);
+  fetUserPhotos(user, (photos) => {
+    console.log(`These are photos of ${user}:`, photos);
     //third callback
     fetPhotoDetails(photos[0], (details) => {
       console.log(`Details of ${photos[0]}:`, details);
