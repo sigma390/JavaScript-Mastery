@@ -20,3 +20,27 @@ function func() {
 }
 
 //==========> Modern JS doesnt Support hoisting <=============
+
+
+// let is also hoisted but remains "UNINITIALISED" until its declaration
+// Hoisting means it initialise the whatever named with var with undefined 
+
+
+//===============> TEMPORAL DEAD ZONE <======================
+
+// code block until we reach the declaration of a variable
+
+{
+
+  console.log("hello");
+
+
+
+
+
+  const uu = "this is declaration"
+
+
+
+
+}

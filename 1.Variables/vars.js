@@ -46,3 +46,17 @@ if (true) {
     let a_a = "Tiger";
 }
 // console.log(a_a, "i will give referance error");
+
+// redeclaration works in vars but not for let , const , reassignment works for both vars and let but not for const
+
+
+
+//=============> tricky question const make object immutable NOT necessarily true
+
+const person = {
+    name: "Omkar"
+}
+person.name = "Rahul" // valid as the person is referanced to a same object but its contents can be changed
+
+
+
