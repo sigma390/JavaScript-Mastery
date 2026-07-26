@@ -20,3 +20,29 @@ let p = 10;
 console.log(p);
 p = 666;
 console.log(p); // reassigned Value Will be Printed
+
+
+//scope of a variable
+// vars are function scoped not block scoped like if else while for
+
+// example :  
+
+function test() {
+    var xo
+}
+// console.log(xo) // gives referance error variable not defind
+
+if (true) {
+    var xo_xo = 190;
+
+}
+console.log(xo_xo, "this is inside if block yet accessible");
+
+
+//=================> Vars declared with Let are Block scoped <================================
+
+
+if (true) {
+    let a_a = "Tiger";
+}
+// console.log(a_a, "i will give referance error");
