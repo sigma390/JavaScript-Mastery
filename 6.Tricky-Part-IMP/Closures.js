@@ -56,3 +56,58 @@ const quadruple = GiveFactoryFucntion(4);
 console.log(double.factoryFunction(5)); //10
 console.log(triple.factoryFunction(5)); //15
 console.log(quadruple.factoryFunction(5)); //20
+
+
+// real examples
+
+//=================> 1.Counter <===================
+
+const counter = () => {
+
+  let count = 0;
+
+  return () => {
+    count += 1;
+    return count;
+  }
+
+}
+
+const increment = counter();
+console.log(increment());
+
+//============> Encapsulation Example <==============
+
+function encap() {
+  const sum = 10;
+  const name = "Omkar";
+
+
+  return {
+    doubleTheSum: function () {
+      return 2 * sum;
+    },
+    sayMyName: () => {
+      return name;
+    }
+
+  }
+
+};
+
+const resultt = encap();
+console.log(resultt.doubleTheSum())
+console.log(resultt.sayMyName())
+
+
+//=============> Factory Function <=========
+
+const GenerateFacFxn = (factor) => {
+  return function (number) {
+    return factor * number
+  }
+}
+
+const FacFxnGenerator = GenerateFacFxn(13);
+
+console.log(FacFxnGenerator(100))
