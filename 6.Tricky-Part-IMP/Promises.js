@@ -53,18 +53,23 @@ Promise.resolve("A").then((val) => { //resolve ("A")=> Promise.value = "A",
     return "D"
 })
 
-const promise1 = Promise.resolve("A");
+// const promise1 = Promise.resolve("A");
 
-const promise2 = promise1.then((val) => {
-    console.log(val);
-    return "B";
-});
+// const promise2 = promise1.then((val) => {
+//     console.log(val);
+//     return "B";
+// });
 
-// Internally it's roughly like:
-const promise2 = new Promise((resolve) => {
-    // wait for promise1...
-    const result = callback("A");   // result = "B"
-    resolve(result);                // promise2 becomes fulfilled with "B"
-});
+// // Internally it's roughly like:
+// const promise_2 = new Promise((resolve) => {
+//     // wait for promise1...
+//     const result = callback("A");   // result = "B"
+//     resolve(result);                // promise_2 becomes fulfilled with "B"
+// });
 
 
+
+
+// what if promise didnt return anything what happens to Promise chain
+
+Promise.resolve("Z").then((val) => console.log(val)).then((val) => console.log(val))
