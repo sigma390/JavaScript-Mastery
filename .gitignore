@@ -1,1 +1,17 @@
 tempCodeRunnerFile.js
+node_modules/
+dist/
+.env
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Temporary files
+tempCodeRunnerFile.js
